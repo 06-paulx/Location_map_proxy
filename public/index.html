@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/main.css" />
+    <title>FEC paulx</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="tour"></div>
+    <div id="amenities"></div>
+    <div id="locationMap"></div>
+    <div id="reviews"></div>
+    <div id="availability"></div>
+    <div id="otherListings"></div>
+    <div id="bookingFloater"></div>
+
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <script src="http://localhost:3001/app.js"></script>
+    <script src="http://localhost:3002/app.js"></script>
+    <script src="http://localhost:3003/app.js"></script>
+    <script src="http://localhost:3004/app.js"></script>
+    <script src="http://localhost:3005/app.js"></script>
+    <script src="http://localhost:3006/app.js"></script>
+    <script src="http://localhost:3007/app.js"></script>
+    <script src="http://localhost:3008/app.js"></script>
+    <script src="http://localhost:3009/app.js"></script>
+    <script src="http://localhost:3010/app.js"></script>
+    <script src="http://localhost:3011/app.js"></script>
+    <script src="http://localhost:3012/app.js"></script>
+    <script src="http://localhost:3013/app.js"></script>
+    <script>
+      ReactDOM.render(
+        React.createElement(Header),
+        document.getElementById('Header'),
+      );
+      ReactDOM.render(
+        React.createElement(Tour),
+        document.getElementById('Tour'),
+      );
+      ReactDOM.render(
+        React.createElement(Amenities),
+        document.getElementById('Amenities'),
+      );
+      ReactDOM.render(
+        React.createElement(LocationMap),
+        document.getElementById('LocationMap'),
+      );
+      ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('Reviews'),
+      );
+      ReactDOM.render(
+        React.createElement(Availability),
+        document.getElementById('Availability'),
+      );
+      ReactDOM.render(
+        React.createElement(OtherHighlyRatedHomes),
+        document.getElementById('OtherHighlyRatedHomes'),
+      );
+      ReactDOM.render(
+        React.createElement(RequestBookingFloater),
+        document.getElementById('RequestBookingFloater'),
+      );
+    </script>
+  </body>
+</html>
