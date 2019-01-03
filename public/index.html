@@ -2,35 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="http://localhost:3007/css/main.css" />
+    <link rel="stylesheet" href="http://localhost:3007/css/fonts.css" />
+
+    <link rel="stylesheet" href="http://localhost:3012/main.css" />
+    <link rel="stylesheet" href="http://localhost:3012/fonts.css" />
+
     <title>FEC paulx</title>
   </head>
   <body>
-    <div id="header"></div>
-    <div id="tour"></div>
-    <div id="amenities"></div>
-    <div id="locationMap"></div>
-    <div id="reviews"></div>
-    <div id="availability"></div>
-    <div id="otherListings"></div>
-    <div id="bookingFloater"></div>
+    <div id="Header"></div>
+    <div id="Tour"></div>
+    <div id="Amenities"></div>
+    <div id="LocationMap"></div>
+    <div id="Reviews"></div>
+    <div id="Availability"></div>
+    <div id="OtherListings"></div>
+    <div id="BookingFloater"></div>
 
-    <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
+    <!-- <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script> -->
+    <!-- <script src="http://localhost:3001/app.js"></script>
     <script src="http://localhost:3002/app.js"></script>
     <script src="http://localhost:3003/app.js"></script>
     <script src="http://localhost:3004/app.js"></script>
     <script src="http://localhost:3005/app.js"></script>
-    <script src="http://localhost:3006/app.js"></script>
-    <script src="http://localhost:3007/app.js"></script>
-    <script src="http://localhost:3008/app.js"></script>
+    <script src="http://localhost:3006/app.js"></script> -->
+
+    <script src="http://localhost:3007/api.js"></script>
+    <script src="http://localhost:3007/bundle.js"></script>
+    <script type="text/javascript">
+      const apiScript = document.createElement('script');
+      apiScript.setAttribute(
+        'src',
+        `https://maps.googleapis.com/maps/api/js?key=${
+          window.apiKey
+        }&callback=initMap`,
+      );
+      document.body.appendChild(apiScript);
+    </script>
+
+    <script src="http://localhost:3012/bundle.js"></script>
+    <!-- <script src="http://localhost:3008/app.js"></script>
     <script src="http://localhost:3009/app.js"></script>
     <script src="http://localhost:3010/app.js"></script>
     <script src="http://localhost:3011/app.js"></script>
-    <script src="http://localhost:3012/app.js"></script>
-    <script src="http://localhost:3013/app.js"></script>
-    <script>
+    <script src="http://localhost:3013/app.js"></script> -->
+
+    <!-- <script>
       ReactDOM.render(
         React.createElement(Header),
         document.getElementById('Header'),
@@ -63,6 +82,6 @@
         React.createElement(RequestBookingFloater),
         document.getElementById('RequestBookingFloater'),
       );
-    </script>
+    </script> -->
   </body>
 </html>
