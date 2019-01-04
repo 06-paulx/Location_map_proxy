@@ -10,42 +10,43 @@ app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // first arg - host/port for server to proxy
-// creates the full path for the server to proxy to
-//TODO update all urls
-//client indexjs split by 3
-//all static links css/map icon/initmap etc
+// creates the full path (api calls) for the server to proxy to
+//TODO
+//find endponits that need to be proxied
+//link css/ bundle.js
+//update div name to match proxy's html div names
 
 //map ajax
 app.use(
-  '/api/location',
+  'localhost:3007',
   proxy('localhost:3007', {
     proxyReqPathResolver: req => {
-      return '/api/location' + req.url;
+      return 'localhost:3007' + req.url;
     },
   }),
 );
 
 //for map icon
-app.use(
-  '/css/map_icon.png',
-  proxy('localhost:3007', {
-    proxyReqPathResolver: req => {
-      return '/css/map_icon.png';
-    },
-  }),
-);
+// app.use(
+//   '/css/map_icon.png',
+//   proxy('localhost:3007', {
+//     proxyReqPathResolver: req => {
+//       return '/css/map_icon.png';
+//     },
+//   }),
+// );
 
 //other listings
 //api/listing/:listingId/otherlistings
 
 app.use(
-  '/api/listing',
+  '/localhost:3012',
   proxy('localhost:3012', {
-    proxyReqPathResolver: req => '/api/listing' + req.url,
+    proxyReqPathResolver: req => '/localhost:3012' + req.url,
   }),
 );
 
-app.get('/listing/:id', (req, res) => {
+app.get('/:id', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
