@@ -10,15 +10,15 @@
 
 FROM node:11
 
-RUN mkdir -p src/locationMap
+RUN mkdir -p src/location
 
-WORKDIR /src/locationMap
+WORKDIR /src/location
 
-COPY package*json /src/locationMap/
+COPY package*json /src/location/
 
 RUN npm install
 
-COPY . /src/locationMap/
+COPY . /src/location/
 
 EXPOSE 3000
 
