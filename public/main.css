@@ -8,3 +8,9 @@ body {
   margin-top: 72px;
   margin-bottom: 72px;
 }
+
+/* @media (min-width: 1128px) {
+  body {
+    max-width: 1080px;
+  }
+} */
