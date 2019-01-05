@@ -8,15 +8,17 @@
 # COPY ./sql-scripts/ /docker-entrypoint-initdb.d/
 
 
-FROM node:7.6-alpine
+FROM node:11
 
-RUN mkdir -p /src/app
+RUN mkdir -p src/locationMap
 
-WORKDIR /src/app
+WORKDIR /src/locationMap
 
-COPY . /src/app
+COPY package*json /src/locationMap/
 
-RUN npm install --only=production
+RUN npm install
+
+COPY . /src/locationMap/
 
 EXPOSE 3000
 
