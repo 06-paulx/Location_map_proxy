@@ -15,6 +15,7 @@ console.log(path.join(__dirname, '/public'));
 // creates the full path (api calls) for the server to proxy to
 //TODO
 //find endponits that need to be proxied
+
 //link css/ bundle.js
 //update div name to match proxy's html div names
 
