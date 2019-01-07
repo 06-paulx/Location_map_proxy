@@ -8,7 +8,7 @@
 # COPY ./sql-scripts/ /docker-entrypoint-initdb.d/
 
 
-FROM node:11
+FROM node:8.12
 
 RUN mkdir -p src/location
 

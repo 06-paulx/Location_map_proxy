@@ -3,17 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" media="screen" href="/main.css" />
-    <link rel="stylesheet" href="http://localhost:3004/css/fonts.css" />
-    <link rel="stylesheet" href="http://localhost:3007/css/main.css" />
-    <link rel="stylesheet" href="http://localhost:3007/css/fonts.css" />
-
-    <link rel="stylesheet" href="http://localhost:3010/bookingStyles.css" />
-    <link rel="stylesheet" href="http://localhost:3012/main.css" />
-    <link rel="stylesheet" href="http://localhost:3012/fonts.css" />
-
-    <link rel="stylesheet" href="http://localhost:4000/styles.css" />
-    <link rel="stylesheet" href="http://localhost:4001/styles.css" />
-    <link rel="stylesheet" href="http://localhost:4002/styles.css" />
+    <link
+      rel="stylesheet"
+      href="http://ec2-18-219-50-56.us-east-2.compute.amazonaws.com/bookingStyles.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="http://ec2-3-16-114-148.us-east-2.compute.amazonaws.com/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="http://ec2-3-16-114-148.us-east-2.compute.amazonaws.com/css/fonts.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="http://ec2-3-17-67-124.us-east-2.compute.amazonaws.com/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://ec2-54-158-234-214.compute-1.amazonaws.com/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://ec2-35-153-161-238.compute-1.amazonaws.com/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://ec2-54-215-152-55.us-west-1.compute.amazonaws.com/styles.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rouge+Script"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
 
     <title>FEC paulx</title>
   </head>
@@ -39,26 +74,16 @@
     <div id="Footer"></div>
     <div id="Booking"></div>
 
-    <script src="http://localhost:3004/bundle.js"></script>
-    <script src="http://localhost:3007/api.js"></script>
-    <script src="http://localhost:3007/bundle.js"></script>
-    <script type="text/javascript">
-      const apiScript = document.createElement('script');
-      apiScript.setAttribute(
-        'src',
-        `https://maps.googleapis.com/maps/api/js?key=${
-          window.apiKey
-        }&callback=initMap`,
-      );
-      document.body.appendChild(apiScript);
-    </script>
-
-    <script src="http://localhost:3010/app.js"></script>
-    <script src="http://localhost:3012/bundle.js"></script>
-
-    <script src="http://localhost:4000/bundle.js"></script>
-    <script src="http://localhost:4001/bundle.js"></script>
-    <script src="http://localhost:4002/bundle.js"></script>
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <script src="http://ec2-54-153-93-125.us-west-1.compute.amazonaws.com/bundle.js"></script>
+    <script src="http://ec2-18-219-50-56.us-east-2.compute.amazonaws.com/app.js"></script>
+    <script src="http://ec2-3-16-114-148.us-east-2.compute.amazonaws.com/bundle.js"></script>
+    <script src="http://ec2-3-16-114-148.us-east-2.compute.amazonaws.com/api.js"></script>
+    <script src="http://ec2-3-17-67-124.us-east-2.compute.amazonaws.com/bundle.js"></script>
+    <script src="http://ec2-54-158-234-214.compute-1.amazonaws.com/bundle.js"></script>
+    <script src="http://ec2-35-153-161-238.compute-1.amazonaws.com/bundle.js"></script>
+    <script src="http://ec2-54-215-152-55.us-west-1.compute.amazonaws.com/bundle.js"></script>
 
     <!-- <script>
       ReactDOM.render(
